@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div.conta, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">
+            My Contacts
+        </h1>
+        <input type="text" id='filterInput' placeholder='search names &#x1F612;'>
+        <ul id='names' class="collection with-header">
+            <li class="collection-header">
+                <h5>A</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Abe</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Abe</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Abe</a>
+            </li>
+            <li class="collection-header">
+                <h5>B</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Baby</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Bob</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Bred</a>
+            </li>
+            <li class="collection-header">
+                <h5>C</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Carry</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">cessie</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Cap</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let filterInput = document.getElementById('filterInput');
+        filterInput.addEventListener('keyup', filterNames);
+        //what is the keyup? 키보드가 눌러진 상태에서 손을 떼는 순간 실행	
+        function filterNames() {
+            let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+            const ul = document.getElementById('names');
+            const li = ul.querySelectorAll('li.collection-item');
+            //indexOf는 문자열아니 배열에서 찾고 싶은 문자의 위치 반환. -1반환시 없음
+            for(let i = 0; i< li.length; i++){
+                let a = li[i].getElementsByTagName('a')[0];
+                if(a.innerHTML.toUpperCase().indexOf(filterValue)> -1){                    
+                    li[i].style.display = '';
+                    //이미 none이 되버린 li를 되돌리기 위해
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+    </body>
+    
+    </html>

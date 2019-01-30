@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <title>Bootstrap Cheat Sheet</title>
+    <style>
+        .navbar{
+            margin-bottom:0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1>Welcome To My Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <div class="container">
+        <!-- TYPOGRAPHY -->
+        <h1 class="page-header">Hello world
+            <small>Secondary text</small>
+        </h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, quod corrupti reprehenderit
+            provident </p>
+        <p><mark>lorem ipsum gsdkti</mark>ipsum tempore temporibus necessitatibus facilis maxime doloribus adipisci,
+            obcaecati, ab dolores consectetur nam consequatur aliquam fugiat libero.</p>
+
+        <hr>
+
+        <!-- ALIGNMENT & TRANSFORMATION-->
+        <p class="text-left text-lowercase">Left aligned text</p>
+        <p class="text-center text-uppercase">Center aligned text</p>
+        <p class="text-right text-capitalize">Right aligned text</p>
+        <p class="text-justify">Justified text</p>
+        <p class="text-nowrap">No wrap text</p>
+
+        <!-- QUICK FLOATS-->
+        <div class="float-right">Div floated to right</div>
+        <div class="float-left">Div floated to left</div>
+
+        <!-- CLEAR FLOAT -->
+        <div class="clearfix"></div>
+        <hr>
+
+        <!-- BLOCKQUOTE is not working? -->
+        <blockquote class="blockquote-reverse">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Quote by <cite title="John Doe">John Doe</cite></footer>
+        </blockquote>
+
+        <hr>
+
+        <!-- LISTS -->
+        <ul class="list-unstyled">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ul>
+        <ul class="list-inlined">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ul>
+
+        <!-- CODE -->
+        <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+        <br>
+        Change directory with <kbd>cd</kbd>
+        <br>
+        To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>
+
+        <hr>
+        <!-- CONTEXTUAL COLORS -->
+        <p class="text-primary">Hello world</p>
+        <p class="text-success">Hello world</p>
+        <p class="text-info">Hello world</p>
+        <p class="text-warning">Hello world</p>
+        <p class="text-danger">Hello world</p>
+        <p class="text-muted">Hello world</p>
+
+        <!-- CONTEXTUAL BACKGROUND COLORS -->
+        <p class="bg-primary">Hello world</p>
+        <p class="bg-success">Hello world</p>
+        <p class="bg-info">Hello world</p>
+        <p class="bg-warning">Hello world</p>
+        <p class="bg-danger">Hello world</p>
+    </div>
+    <hr>
+    <div class="container">
+        <!-- BUTTONS -->
+        <button class="btn btn-default">button</button>
+        <a href="#" class="btn btn-default" role="button">link</a>
+        <input type="submit" class="btn btn-default" value="submit">
+        <hr>
+        <!-- CONTEXTUAL BUTTONS -->
+        <button class="btn btn-default">Def</button>
+        <button class="btn btn-primary">Pri</button>
+        <button class="btn btn-success">Suc</button>
+        <button class="btn btn-info">Inf</button>
+        <button class="btn btn-warning">War</button>
+        <button class="btn btn-danger">Dan</button>
+        <hr>
+        <!-- BUTTON SIZE btn-xs is not working-->
+        <button class="btn btn-default btn-lg">Def</button>
+        <button class="btn btn-primary btn-sm">Def</button>
+        <button class="btn btn-default btn-xs" disabled="disabled">Def</button>
+    </div>
+    <hr>
+
+    <!-- FORMS -->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Add Name">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Add Email">
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" placeholder="Add Message"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Upload File</label>
+                <input type="file">
+                <p class="help-block">Only png and jpg allowed</p>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-default">submit</button>
+        </form>
+
+        <hr>
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+
+            <div class="checkbox"><label>
+                    <input type="checkbox"> Remember me
+                </label></div>
+
+            <button type="submit" class="btn btn-default">Login</button>
+        </form>
+
+    </div>
+
+    <div class="container">
+        <table class="table table-striped table-hover table-condensed">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr class="danger">
+                <td>Mum</td>
+                <td>Kelly</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>Quinn</td>
+                <td>50</td>
+            </tr>
+            <tr class="success">
+                <td>Haley</td>
+                <td>Iznle</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item">&#x1F992; giraffe</li>
+            <li class="list-group-item">&#x1F985; eagle</li>
+            <li class="list-group-item">&#x1F42B; camel</li>
+            <li class="list-group-item">&#x1F407; rabbit</li>
+        </ul>
+        <ul class="list-group">
+            <a href="#" class="list-group-item">one</a>
+            <a href="#" class="list-group-item list-group-item-success">two</a>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <!-- PANEL is not working-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    Panel Title
+                </h3>
+            </div>
+            <div class="panel-body">
+                Panel Content
+            </div>
+            <div class="panel-footer">
+                Panel Footer
+            </div>
+        </div>
+        <hr>
+        <!-- WELL is not working-->
+        <div class="well">Hello world</div>
+        <div class="well well-lg">Hello world</div>
+        <div class="well well-sm">Hello world</div>
+        <hr>
+
+        <!-- ALERTS -->
+        <div class="alert alert-success" role="alert">A success alert</div>
+        <div class="alert alert-info" role="alert">info</div>
+        <div class="alert alert-warning" role="alert">warning</div>
+        <div class="alert alert-danger" role="alert">danger</div>
+
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+            You can close this alert
+        </div>
+
+        <!-- PROGRESS BARS -->
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:50%;">
+                50%
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- LABELS -->
+        <span class="label label-default">Default</span>
+        <h1>Hello <span class="label label-primary">Primary</span></h1>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+
+        <hr>
+        <!-- BADGES -->
+        <a href="#">Inbox <span class="badge">50</span></a>
+
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">2</span>
+        </button>
+    </div>
+    </div>
+
+    <!-- IMAGES -->
+    <div class="container">
+        <img class="thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">
+        <img class="img-rounded" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"><br><br>
+        <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">
+    </div>
+
+    <!-- GRIDS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+        </div>
+    </div>
+    <div style="height: 400px;"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
