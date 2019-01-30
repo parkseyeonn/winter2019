@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    color:#ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    align-items: center;
+}
+
+.link {
+    background-color: salmon;
+    color: white;
+    padding: 2em 3em;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: none;
+     align-self: center;
+    cursor: pointer;
+    font-weight: bold;
+}   
